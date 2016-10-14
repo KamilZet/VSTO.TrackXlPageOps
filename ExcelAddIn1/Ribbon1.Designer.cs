@@ -38,6 +38,7 @@
             this.group1 = this.Factory.CreateRibbonGroup();
             this.lblLastDeletedPage = this.Factory.CreateRibbonLabel();
             this.btnPresentWPF = this.Factory.CreateRibbonButton();
+            this.dropXlPageList = this.Factory.CreateRibbonDropDown();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             // 
@@ -50,6 +51,7 @@
             // 
             // group1
             // 
+            this.group1.Items.Add(this.dropXlPageList);
             this.group1.Items.Add(this.btnPresentWPF);
             this.group1.Items.Add(this.lblLastDeletedPage);
             this.group1.Label = "group1";
@@ -68,6 +70,11 @@
             this.btnPresentWPF.Name = "btnPresentWPF";
             this.btnPresentWPF.ShowImage = true;
             this.btnPresentWPF.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
+            // 
+            // dropXlPageList
+            // 
+            this.dropXlPageList.Label = "dropDown1";
+            this.dropXlPageList.Name = "dropXlPageList";
             // 
             // Ribbon1
             // 
@@ -88,6 +95,7 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnPresentWPF;
         internal Microsoft.Office.Tools.Ribbon.RibbonLabel lblLastDeletedPage;
+        internal Microsoft.Office.Tools.Ribbon.RibbonDropDown dropXlPageList;
     }
 
     partial class ThisRibbonCollection

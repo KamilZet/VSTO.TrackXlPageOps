@@ -7,7 +7,6 @@
                     <button id="btnPresentWPF" onAction="button1_Click" label="button1" size="large" />
                     <labelControl id="lblLastDeletedPage" label="label1" />
                 </group>
-              <group id="group2" label="group2"/>
             </tab>
         </tabs>
     </ribbon>
